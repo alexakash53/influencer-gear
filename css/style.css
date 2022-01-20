@@ -75,7 +75,7 @@ nav {
     color: #3A3A3A;
 }
 .logo span{
-    color: #7728D4;
+    color: rgb(119, 40, 212);
 }
 .navigation {
     display: flex;
@@ -107,12 +107,14 @@ nav {
 }
 
 /* header area end */
-
+.banner-area{
+    background-color: rgba(120, 40, 212, 0.123);
+    background-blend-mode: overlay;
+}
 .banner {
-    height: calc(100vh, 80px);
+    height: 100vh);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: rgba(#000, #000, #000, 0.7);
 }
 
 .left-banner {
