@@ -70,11 +70,13 @@ nav {
 
 .logo a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     color: #3A3A3A;
 }
-
+.logo span{
+    color: #7728D4;
+}
 .navigation {
     display: flex;
 }
@@ -94,8 +96,11 @@ nav {
     padding: 10px 15px;
     font-weight: 600;
     color: #3A3A3A;
+    transition: 1s ease;
 }
-
+.nav-menu li a:hover{
+    color: #7728D4;
+}
 .nav-icon .fas {
     font-size: 18px;
     margin: 12px 8px;
@@ -107,6 +112,7 @@ nav {
     height: calc(100vh, 80px);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: rgba(#000, #000, #000, 0.7);
 }
 
 .left-banner {
@@ -121,7 +127,9 @@ nav {
     font-weight: 700;
     color: #3A3A3A;
 }
-
+.left-banner span{
+    color: #FC0AB3;
+}
 .left-banner p {
     font-size: 16px;
     font-weight: 600;
@@ -176,7 +184,15 @@ nav {
     margin-top: 20px;
 }
 .single-influencer{
+    box-shadow: 0px 0px 29px 5px #EFEFEF;
+    padding-bottom: 10px;
     margin-bottom: 10px;
+}
+.single-influencer{
+    border: 8px solid snow;
+}
+.single-influencer h2{
+    font-size: 22px;
 }
 
 /* influencer area end */
@@ -303,7 +319,7 @@ nav {
     margin: 15px 0;
 }
 
-.footer-icon {
+.footer-icon a{
     font-size: 20px;
     color: #fff;
 }
@@ -363,6 +379,9 @@ nav {
     .Featured{
         grid-gap: 30px;
     }
+    .Featured-img img {
+        width: 100%;
+    }
     .Featured-content{
         margin-left: 0;
 
@@ -375,7 +394,7 @@ nav {
 
 /* Extra small Device. */
 @media (max-width: 767px) {
-    header {
+    header .navigation{
         display: none;
     }
     .banner {
@@ -397,7 +416,7 @@ nav {
     }
     .brand img{
         width: 50%;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .products {
         grid-template-columns: repeat(1, 1fr);
@@ -420,7 +439,7 @@ nav {
 /* SM Small Device :550px. */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     header {
-        display: none;
+        /* display: none; */
     }
     .banner {
         padding: 50px 0;
